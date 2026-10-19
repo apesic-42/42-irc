@@ -81,15 +81,4 @@ PRIVMSG #42 :hello
 
 ### AI usage
 
-AI (Claude) was used to:
-
-- review the existing network code (socket setup, `poll()` loop, input buffer) and
-  list its bugs (missing `POLLOUT` handling, wrong event mask, unbounded buffers,
-  no exception handling);
-- write the IRC protocol layer: line parser, command dispatcher, registration,
-  channel commands, `MODE` handling, and the built-in bot;
-- write a test script (netcat-like scenarios, slow-reader and load tests) and the
-  French documentation in `doc/`.
-
-All generated code was read, tested with netcat-like scripts and valgrind, and
-is explained in `doc/`.
+AI (mistral ai) was used to understand the protocol and learn. 
